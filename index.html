@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+       text-align: center;
+    }
+        .button{
+            width: 70px;
+            height: 65px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+        #red{background-color: red;}
+        #yellow{background-color: yellow;}
+        #green{background-color: green;}
+        #blue{background-color: blue;}
+
+        #color{
+            position: absolute;
+            left:40%;
+            top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change the background</h1>
+   <span id="color"> <button class="button" id="red"></button> <button class="button" id="yellow"></button> <button class="button" id="green"> </button> <button class="button" id="blue"></button></span>
+</body>
+<script>
+    let red = document.getElementById("red");
+    let yellow = document.getElementById("yellow");
+    let green = document.getElementById("green");
+    let blue = document.getElementById("blue");
+    let body = document.querySelector("body");
+    let h1 = document.querySelector("h1");
+
+    red.addEventListener("click" , function(){
+        body.style.backgroundColor = "red";
+        h1.style.color = "white"
+    }
+    )
+    yellow.addEventListener("click" , function(){
+        body.style.backgroundColor = "yellow";
+        h1.style.color = "white"
+    }
+    )
+    green.addEventListener("click" , function(){
+        body.style.backgroundColor = "green";
+        h1.style.color = "white"
+    }
+    )
+    blue.addEventListener("click" , function(){
+        body.style.backgroundColor = "blue";
+        h1.style.color = "white"
+    }
+    )
+
+</script>
+</html>
